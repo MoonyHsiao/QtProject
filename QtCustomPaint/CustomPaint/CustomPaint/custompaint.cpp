@@ -7,9 +7,10 @@ CustomPaint::CustomPaint(QWidget *parent)
 {
 	ui.setupUi(this);
 	userRunPath = QApplication::applicationDirPath() + "/";
-	
 
 	int pinGeoY = (270 + 22);
+
+#pragma region V1
 	pinGeoY = 10;
 	pinV12 = new baseInfoWidget_Pin(this);
 	pinV12->setGeo(5, pinGeoY);
@@ -30,7 +31,7 @@ CustomPaint::CustomPaint(QWidget *parent)
 	effDash->dashBoard->setBarColor_10(124, 182, 2); //setColor 10%
 	effDash->dashBoard->setBarColor_0(129, 188, 0); //setColor 0%
 	effDash->dashBoard->setUpperBound(100);
-
+#pragma endregion V1
 	setupDemoInfoTimer();
 
 	clock = new baseInfoWidget_Clock(this);
@@ -39,9 +40,29 @@ CustomPaint::CustomPaint(QWidget *parent)
 	clock->setWidgetTitle(tr("clock"));
 
 	reSetClock();
-
 	setupClockTimer();
-	//QTimer::singleShot(1000, this, SLOT(takeScreenshot()));
+	
+	v2 = new baseInfoWidget_PinV2(this);
+	v2->setGeo(5, pinGeoY+200);
+	v2->resize(135, 135);
+	v2->setWidgetTitle("PinDashV2");
+
+
+	effDashV2 = new baseInfoWidget_DashV2(this);
+	effDashV2->setGeo(151, pinGeoY+200);
+	effDashV2->resize(135, 135);
+	effDashV2->dashBoard->setTrafficLightModel(true);
+	effDashV2->setWidgetTitle(tr("DashBoard")); //set DashBoard title
+	effDashV2->setWidgetUnit("%"); //setUnit
+	effDashV2->setlblImage(userRunPath + "/Image/Efficiency.png"); //set Image
+	effDashV2->movelblImageYaxis(60);
+	effDashV2->dashBoard->setBarColor_100(58, 112, 28); //setColor 100%
+	effDashV2->dashBoard->setBarColor_10(124, 182, 2); //setColor 10%
+	effDashV2->dashBoard->setBarColor_0(129, 188, 0); //setColor 0%
+	effDashV2->dashBoard->setUpperBound(100);
+	effDashV2->setWidgetValueGeometry((135 - 60)/2, 110, 60, 20);
+	//QTimer::singleShot(3000, this, SLOT(takeScreenshot()));
+
 
 }
 
@@ -64,10 +85,15 @@ void CustomPaint::demoInfo()
 	}
 
 	pinV12->pinDashBoard->setSamples(VVOut12);
+	v2->pinDashBoard->setSamples(VVOut12);
+
 
 	float EFF = rand() % 100;
 	effDash->dashBoard->setSamples(EFF);
 	effDash->setWidgetData(effDashWidgetString.arg(QString::number(EFF, 'f', 0)));
+
+	effDashV2->dashBoard->setSamples(EFF);
+	effDashV2->setWidgetData(effDashWidgetString.arg(QString::number(EFF, 'f', 0)));
 }
 
 void CustomPaint::setupDemoInfoTimer()
@@ -106,7 +132,7 @@ void CustomPaint::simulationClock()
 	clockTime %= 1440;
 
 	//float simulationData = (float)(rand() % 100) / 100;
-	float simulationData = (float)(rand() % 70+30) / 100;
+	float simulationData = (float)(rand() % 70 + 30) / 100;
 	//float simulationData = (float)(rand() % 40 + 60) / 100;
 
 	clockDataList[clockDataIndex] = QString::number(simulationData);

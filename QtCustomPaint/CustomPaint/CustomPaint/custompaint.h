@@ -7,6 +7,8 @@
 #include <QTimer>
 #include "baseInfoWidget_Dash.h"
 #include "baseInfoWidget_Clock.h"
+#include "baseInfoWidget_PinV2.h"
+#include "baseInfoWidget_DashV2.h"
 class CustomPaint : public QMainWindow
 {
 	Q_OBJECT
@@ -23,7 +25,8 @@ private:
 	Ui::CustomPaintClass ui;
 	baseInfoWidget_Pin *pinV12;
 	baseInfoWidget_Dash *effDash;
-	
+	baseInfoWidget_DashV2 *effDashV2;
+	baseInfoWidget_PinV2 *v2;
 	QTimer* demoInfoTimer;
 	QTimer* clockTimer;
 	QString effDashWidgetString =

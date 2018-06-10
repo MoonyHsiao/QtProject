@@ -33,6 +33,18 @@
       <Extensions>cpp;moc</Extensions>
       <SourceControlFiles>False</SourceControlFiles>
     </Filter>
+    <Filter Include="Header Files\V1">
+      <UniqueIdentifier>{245b8c6f-427a-48f7-b5c1-aede7b511b9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\V2">
+      <UniqueIdentifier>{d49dee46-6865-4885-a90c-5a8cb1c41cc3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\V2">
+      <UniqueIdentifier>{0317fefc-53bb-4f73-8243-09ae2f8020cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\V1">
+      <UniqueIdentifier>{5597c437-f2ed-4395-b644-b6e863043427}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -62,9 +74,6 @@
     <ClCompile Include="GeneratedFiles\Release\moc_pinDashBoardWidget.cpp">
       <Filter>Generated Files\Release</Filter>
     </ClCompile>
-    <ClCompile Include="baseInfoWidget_Pin.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="pinDashBoardWidget.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -80,9 +89,6 @@
     <ClCompile Include="GeneratedFiles\Release\moc_dashBoardWidget.cpp">
       <Filter>Generated Files\Release</Filter>
     </ClCompile>
-    <ClCompile Include="baseInfoWidget_Dash.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="dashBoardWidget.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -92,8 +98,41 @@
     <ClCompile Include="GeneratedFiles\Release\moc_baseInfoWidget_Clock.cpp">
       <Filter>Generated Files\Release</Filter>
     </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_baseWidgetV2.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_baseWidgetV2.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
     <ClCompile Include="baseInfoWidget_Clock.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\V1</Filter>
+    </ClCompile>
+    <ClCompile Include="baseInfoWidget_Dash.cpp">
+      <Filter>Source Files\V1</Filter>
+    </ClCompile>
+    <ClCompile Include="baseInfoWidget_Pin.cpp">
+      <Filter>Source Files\V1</Filter>
+    </ClCompile>
+    <ClCompile Include="baseWidgetV2.cpp">
+      <Filter>Source Files\V2</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_baseInfoWidget_PinV2.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_baseInfoWidget_PinV2.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="baseInfoWidget_PinV2.cpp">
+      <Filter>Source Files\V2</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_baseInfoWidget_DashV2.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_baseInfoWidget_DashV2.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="baseInfoWidget_DashV2.cpp">
+      <Filter>Source Files\V2</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -106,20 +145,29 @@
     <CustomBuild Include="custompaint.qrc">
       <Filter>Resource Files</Filter>
     </CustomBuild>
-    <CustomBuild Include="baseInfoWidget_Pin.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
     <CustomBuild Include="pinDashBoardWidget.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="baseInfoWidget_Dash.h">
       <Filter>Header Files</Filter>
     </CustomBuild>
     <CustomBuild Include="dashBoardWidget.h">
       <Filter>Header Files</Filter>
     </CustomBuild>
     <CustomBuild Include="baseInfoWidget_Clock.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\V1</Filter>
+    </CustomBuild>
+    <CustomBuild Include="baseInfoWidget_Dash.h">
+      <Filter>Header Files\V1</Filter>
+    </CustomBuild>
+    <CustomBuild Include="baseInfoWidget_Pin.h">
+      <Filter>Header Files\V1</Filter>
+    </CustomBuild>
+    <CustomBuild Include="baseWidgetV2.h">
+      <Filter>Header Files\V2</Filter>
+    </CustomBuild>
+    <CustomBuild Include="baseInfoWidget_PinV2.h">
+      <Filter>Header Files\V2</Filter>
+    </CustomBuild>
+    <CustomBuild Include="baseInfoWidget_DashV2.h">
+      <Filter>Header Files\V2</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
