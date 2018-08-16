@@ -61,9 +61,26 @@ CustomPaint::CustomPaint(QWidget *parent)
 	effDashV2->dashBoard->setBarColor_0(129, 188, 0); //setColor 0%
 	effDashV2->dashBoard->setUpperBound(100);
 	effDashV2->setWidgetValueGeometry((135 - 60)/2, 110, 60, 20);
-	//QTimer::singleShot(3000, this, SLOT(takeScreenshot()));
+	
 
+	int Taichisize = 250;
+	LED12 = new TaiChi(12, 0.8, Taichisize, this);
+	LED12->setGeometry(500, 50, Taichisize, Taichisize);
+	int Taichisize2 = 150;
+	LED6 = new TaiChi(6, 0.9, Taichisize2, this);
+	LED6->setGeometry(500, 300, Taichisize2, Taichisize2);
 
+	
+	RGBPaletteWidget *RGBPalette;
+	QString image = userRunPath + "Image/palette.png";
+	int RGBPaletteSize = 150;
+	RGBPalette = new RGBPaletteWidget(image, RGBPaletteSize, this);
+	RGBPalette->setGeometry(60, 350, RGBPaletteSize, RGBPaletteSize);
+	connect(RGBPalette, SIGNAL(returnRGBValue(int, int, int)), LED12, SLOT(setRGB(int, int, int)));
+	connect(LED6, SIGNAL(lightState(QString)), this, SLOT(getLightState(QString)));
+	connect(RGBPalette, SIGNAL(returnRGBValue(int, int, int)), LED6, SLOT(setRGB(int, int, int)));
+
+	QTimer::singleShot(3000, this, SLOT(takeScreenshot()));
 }
 
 CustomPaint::~CustomPaint()
@@ -147,7 +164,6 @@ void CustomPaint::simulationClock()
 
 }
 
-
 void CustomPaint::takeScreenshot()
 {
 	/*if (isActiveWindow())
@@ -160,3 +176,22 @@ void CustomPaint::takeScreenshot()
 	grabbedScreenshot.save(appName);
 }
 
+void CustomPaint::getLightState(QString data)
+{
+	QJsonParseError error;
+	QJsonDocument jsonDocument = QJsonDocument::fromJson(data.toUtf8(), &error);
+	if (error.error == QJsonParseError::NoError) {
+		if (jsonDocument.isObject()) {
+			QVariantMap result = jsonDocument.toVariant().toMap();
+			int commandType = result["command"].toInt();
+			if (commandType == 0) {
+				QVariantMap resultData;
+				resultData = result["Data"].toMap();
+				QStringList LED = resultData["LED"].toStringList();
+				QStringList rColor = resultData["rColor"].toStringList();
+				QStringList gColor = resultData["gColor"].toStringList();
+				QStringList bColor = resultData["bColor"].toStringList();
+			}
+		}
+	}
+}

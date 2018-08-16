@@ -9,6 +9,8 @@
 #include "baseInfoWidget_Clock.h"
 #include "baseInfoWidget_PinV2.h"
 #include "baseInfoWidget_DashV2.h"
+#include "RGBPaletteWidget.h"
+#include "TaiChi.h"
 class CustomPaint : public QMainWindow
 {
 	Q_OBJECT
@@ -16,11 +18,12 @@ class CustomPaint : public QMainWindow
 public:
 	CustomPaint(QWidget *parent = 0);
 	~CustomPaint();
-	
-private slots:
-void simulationClock();
-void demoInfo();
-void takeScreenshot();
+
+	private slots:
+	void simulationClock();
+	void demoInfo();
+	void takeScreenshot();
+	void getLightState(QString data);
 private:
 	Ui::CustomPaintClass ui;
 	baseInfoWidget_Pin *pinV12;
@@ -46,7 +49,8 @@ private:
 	void setupDemoInfoTimer();
 	int clockDataIndex = 0;
 	int clockTime = 0;
-	
+	TaiChi *LED12;
+	TaiChi *LED6;
 signals:
 };
 
