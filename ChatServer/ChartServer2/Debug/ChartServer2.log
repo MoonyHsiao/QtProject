@@ -1,0 +1,4 @@
+﻿  chatWidget.cpp
+chatWidget.cpp : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+  ChartServer2.vcxproj -> D:\VSProject\SocketServer\ChartServer2\Win32\Debug\ChartServer2.exe
+  ChartServer2.vcxproj -> D:\VSProject\SocketServer\ChartServer2\Win32\Debug\ChartServer2.pdb (Full PDB)

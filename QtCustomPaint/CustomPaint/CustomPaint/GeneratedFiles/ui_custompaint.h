@@ -34,7 +34,7 @@ public:
     {
         if (CustomPaintClass->objectName().isEmpty())
             CustomPaintClass->setObjectName(QStringLiteral("CustomPaintClass"));
-        CustomPaintClass->resize(600, 400);
+        CustomPaintClass->resize(1000, 550);
         menuBar = new QMenuBar(CustomPaintClass);
         menuBar->setObjectName(QStringLiteral("menuBar"));
         CustomPaintClass->setMenuBar(menuBar);
