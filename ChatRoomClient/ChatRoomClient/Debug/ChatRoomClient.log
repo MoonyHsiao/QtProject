@@ -1,0 +1,31 @@
+﻿  Moc'ing chatroomclient.h...
+  Uic'ing chatroomclient.ui...
+  Moc'ing client.h...
+  Moc'ing FileClient.h...
+  Moc'ing FileServer.h...
+  Rcc'ing chatroomclient.qrc...
+RCC : warning : No resources in 'D:\Github\ChatRoomClient\ChatRoomClient\chatroomclient.qrc'.
+  
+  chatroomclient.cpp
+d:\github\chatroomclient\chatroomclient\client.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+d:\github\chatroomclient\chatroomclient\chatCMD.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+  client.cpp
+client.cpp : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+d:\github\chatroomclient\chatroomclient\client.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+d:\github\chatroomclient\chatroomclient\chatCMD.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+  FileClient.cpp
+  FileServer.cpp
+  moc_chatroomclient.cpp
+d:\github\chatroomclient\chatroomclient\client.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+d:\github\chatroomclient\chatroomclient\chatCMD.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+  moc_client.cpp
+d:\github\chatroomclient\chatroomclient\generatedfiles\debug\../../client.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+  moc_FileClient.cpp
+  moc_FileServer.cpp
+  main.cpp
+d:\github\chatroomclient\chatroomclient\client.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+d:\github\chatroomclient\chatroomclient\chatCMD.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+  正在產生程式碼...
+  qrc_chatroomclient.cpp
+  ChatRoomClient.vcxproj -> D:\Github\ChatRoomClient\Win32\Debug\ChatRoomClient.exe
+  ChatRoomClient.vcxproj -> D:\Github\ChatRoomClient\Win32\Debug\ChatRoomClient.pdb (Full PDB)
