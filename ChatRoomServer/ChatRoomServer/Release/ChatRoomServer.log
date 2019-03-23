@@ -1,0 +1,35 @@
+﻿  Moc'ing chatroomserver.h...
+  Uic'ing chatroomserver.ui...
+  Moc'ing TcpClientSocket.h...
+  Moc'ing TcpServer.h...
+  Rcc'ing chatroomserver.qrc...
+RCC : warning : No resources in 'D:\Github\ChatRoomServer\ChatRoomServer\chatroomserver.qrc'.
+  
+  chatroomserver.cpp
+d:\github\chatroomserver\chatroomserver\tcpserver.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+  ClientUser.cpp
+  moc_chatroomserver.cpp
+d:\github\chatroomserver\chatroomserver\tcpserver.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+  moc_TcpClientSocket.cpp
+d:\github\chatroomserver\chatroomserver\generatedfiles\release\../../TcpClientSocket.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+d:\github\chatroomserver\chatroomserver\tcpserver.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+d:\github\chatroomserver\chatroomserver\chatCMD.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+  moc_TcpServer.cpp
+d:\github\chatroomserver\chatroomserver\generatedfiles\release\../../TcpServer.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+  main.cpp
+d:\github\chatroomserver\chatroomserver\tcpserver.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+  TcpClientSocket.cpp
+TcpClientSocket.cpp : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+d:\github\chatroomserver\chatroomserver\tcpclientsocket.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+d:\github\chatroomserver\chatroomserver\tcpserver.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+d:\github\chatroomserver\chatroomserver\chatCMD.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+  TcpGroup.cpp
+  TcpServer.cpp
+TcpServer.cpp : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+d:\github\chatroomserver\chatroomserver\tcpserver.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+d:\github\chatroomserver\chatroomserver\tcpclientsocket.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+d:\github\chatroomserver\chatroomserver\chatCMD.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+  TcpUser.cpp
+  正在產生程式碼...
+  qrc_chatroomserver.cpp
+  ChatRoomServer.vcxproj -> D:\Github\ChatRoomServer\Win32\Release\ChatRoomServer.exe
